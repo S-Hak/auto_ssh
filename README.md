@@ -1,5 +1,7 @@
 # auto_ssh
 一个批量连接ssh执行命令的工具
+[+] 由于第一次登陆是会询问是否接受指纹，所以更新后免rsa密钥指纹验证了
+[+] 想要验证指纹，可直接在代码93行删除【-o StrictHostKeyChecking=no】即可
 
 #### 需要的环境：
   sshpass
