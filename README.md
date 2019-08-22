@@ -1,10 +1,10 @@
 # auto_ssh
 一个批量连接ssh执行命令的工具
 
-### 需要的环境：
+#### 需要的环境：
   sshpass
 
-### 简单使用：
+#### 简单使用：
 ####    bash auto_ssh.sh loginfile commandfile
     其中：
     loginfile是含有【IP 账号 密码】的文件
@@ -24,27 +24,27 @@
     rm -rf ./test
     
   
-### 运行时未加参数，脚本会进行命令提示
+#### 运行时未加参数，脚本会进行命令提示
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/tip.png)
 
 
 
   
-### 运行成功界面
+#### 运行成功界面
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run1.png)
 
 
 
-##### 未提示：  |+| Connected to IP :x.x.x.x  则是未连接成功
+未提示：【  |+| Connected to IP :x.x.x.x  】则是未连接成功
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run2.png)
 
 
 
 
-### 脚本会自动检测环境中是否有需要的命令，如果没有，则给出安装建议：
+#### 脚本会自动检测环境中是否有需要的命令，如果没有，则给出安装建议：
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/install.png)
 
@@ -63,4 +63,5 @@
 		make && make install
 
 
+#### 使用该脚本前需要先连接一次目标服务器获取公钥，如想要批量连接无公钥的服务器，可以发邮箱sh932657531@outlook.com来催促我用expect写一个更自动化的。
 
