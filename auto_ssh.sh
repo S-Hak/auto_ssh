@@ -94,7 +94,7 @@ do
 	ssh_pass=`echo $line |awk '{print $3}'`
 	let num=num+1
 	start_process
-	sshpass -p $ssh_pass ssh $ssh_user@$ssh_ip <<EOF 
+	sshpass -p $ssh_pass ssh -o StrictHostKeyChecking=no $ssh_user@$ssh_ip <<EOF 
 echo -e "\e[33m\n|+| Connected to IP :$ssh_ip \n\n|>| Start executing command \n\e[0m"
 $command_s
 EOF
