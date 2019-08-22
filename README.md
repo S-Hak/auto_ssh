@@ -6,4 +6,4 @@
 
 简单使用：
   
-![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run1.pnghttps://github.com/ShiLE-up/auto_ssh/blob/master/images/run1.png)
+![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run1.png)
