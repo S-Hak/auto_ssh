@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rsa=
+rsa=ture
 
 welcome_go(){
 	echo '''
