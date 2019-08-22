@@ -12,16 +12,19 @@
     
 #### 文件格式：
     ##登陆信息文件使用：【ip 空格 用户名 空格 密码】的格式保存；例：
-    127.0.0.1       root 123456
-		123.123.123.123 user 000000
-		111.11.11.1     adm  password
+    
+    	127.0.0.1       root 123456
+	123.123.123.123 user 000000
+	111.11.11.1     adm  password
+		
     ##命令文件内输入要执行的命令即可；例：
-    cd /opt
-    echo "tset" >>./test
-    rm -rf ./test
+   
+	cd /opt
+    	echo "tset" >>./test
+    	rm -rf ./test
     
   
-### 运行时未加参数，脚本会进行提示
+### 运行时未加参数，脚本会进行命令提示
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/tip.png)
 
@@ -38,5 +41,20 @@
 ### 脚本会自动检测环境中是否有需要的命令，如果没有，则给出安装建议：
 
 ![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/install.png)
+
+
+	Uninstalled sshpass was detected Please install sshpass
+	
+	1. Network Connection 
+		redhat : yum -y install sshpass
+		ubnutu : apt-get -y install sshpass
+	2. No network 
+		wget https://jaist.dl.sourceforge.net/project/sshpass/sshpass/1.06/sshpass-1.06.tar.gz
+		[Copy files to target computer]
+		tar -zxvf sshpass-1.05.tar.gz
+		cd sshpass-1.05
+		./configure
+		make && make install
+
 
 
