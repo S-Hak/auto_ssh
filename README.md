@@ -35,7 +35,7 @@
   
 #### 运行成功界面
 
-![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run1.png)
+![image](https://github.com/ShiLE-up/auto_ssh/blob/master/images/run3.png)
 
 
 
