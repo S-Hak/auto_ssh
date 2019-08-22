@@ -14,7 +14,6 @@ welcome_go(){
 	get_key
 }
 welcome_txt(){
-get_key
 echo '''
 please input user and pass file
   	for example:    
