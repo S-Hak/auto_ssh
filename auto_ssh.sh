@@ -96,10 +96,13 @@ do
 	ssh_ip=`echo $line |awk '{print $1}'`
 	ssh_user=`echo $line |awk '{print $2}'`
 	ssh_pass=`echo $line |awk '{print $3}'`
+	ssh_bz=`echo $line |awk '{print $4}'`
 	let num=num+1
 	start_process
 	sshpass -p $ssh_pass ssh $rsaon_off $ssh_user@$ssh_ip <<EOF 
-echo -e "\e[33m\n|+| Connected to IP :$ssh_ip \n\n|>| Start executing command \n\e[0m"
+echo -e "\e[33m\n|+| Connected to IP :$ssh_ip 
+|+| Remarks: $ssh_bz
+\n|>| Start executing command \n\e[0m"
 $command_s
 EOF
 
