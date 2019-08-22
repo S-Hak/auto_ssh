@@ -3,6 +3,7 @@
 
 #### 需要的环境：
   sshpass
+  （该脚本暂时无法识别是否已有公钥，请先连接一次获取公钥再进行使用）
 
 #### 简单使用：
 ####    bash auto_ssh.sh loginfile commandfile
