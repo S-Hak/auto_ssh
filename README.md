@@ -3,8 +3,6 @@
 
 #### 需要的环境：
   sshpass
-  
-  （该脚本暂时无法识别是否已有公钥，请先连接一次获取公钥再进行使用）
 
 #### 简单使用：
 ####    bash auto_ssh.sh loginfile commandfile
@@ -65,5 +63,4 @@
 		make && make install
 
 
-#### 使用该脚本前需要先连接一次目标服务器获取公钥，如想要批量连接无公钥的服务器，可以使用expect写的脚本。（github上有，我自己的还没写）
 
