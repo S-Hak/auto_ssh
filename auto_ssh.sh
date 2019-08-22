@@ -11,7 +11,7 @@ welcome_go(){
 		Automatic Connection SSH
 			from:ShiLE
 	'''
-	get_key
+	
 }
 welcome_txt(){
 echo '''
@@ -35,11 +35,7 @@ please input user and pass file
 	'''
 }
 
-get_key(){
-echo -e "\033[31m 
-Get the public key before using it
- \033[0m"
-}
+
 
 
 install_help(){
