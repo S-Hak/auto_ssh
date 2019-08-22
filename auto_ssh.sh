@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rsa=
+
 welcome_go(){
 	echo '''
 	  _________.__    .__.____     ___________
@@ -75,6 +77,12 @@ type sshpass >/dev/null 2>&1 || {
 	exit 1;
 }
 
+if [ $rsa ]
+	then rsaon_off=" -o StrictHostKeyChecking=no "  
+	else rsaon_off=" "
+		fi
+
+
 if [[ ! $1 || ! $2 ]]
 	then welcome_txt
 	exit
@@ -90,7 +98,7 @@ do
 	ssh_pass=`echo $line |awk '{print $3}'`
 	let num=num+1
 	start_process
-	sshpass -p $ssh_pass ssh -o StrictHostKeyChecking=no $ssh_user@$ssh_ip <<EOF 
+	sshpass -p $ssh_pass ssh $rsaon_off $ssh_user@$ssh_ip <<EOF 
 echo -e "\e[33m\n|+| Connected to IP :$ssh_ip \n\n|>| Start executing command \n\e[0m"
 $command_s
 EOF
